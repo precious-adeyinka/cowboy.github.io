@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>cowboy</title>
 	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
 
 	<style type="text/css">
 	* {
@@ -46,6 +47,7 @@
 		position: relative;
 		margin-right: 2em;
 		letter-spacing: 0.2em;
+		font-family: "Open Sans";
 	}
 	.logo::after {
 		content: "";
@@ -70,6 +72,7 @@
 	.menu-link {
 		text-decoration: none;
 		color: #000;
+		font-size: 14px;
 	}
 	.menu-link.active {
 		font-weight: 500;
@@ -91,6 +94,7 @@
 	}
 	.btn-pink {
 		background: #de576f!important;
+		width: 150px;
 	}
 	.btn-link {
 		padding: 2em;
@@ -103,7 +107,7 @@
 		align-items: center;
 	}
 	.btn-link:last-child {
-		margin-left: 0.2em;
+		margin-left: 0em;
 	}
 	.amount {
 		height: 25px;
@@ -118,6 +122,7 @@
 	}
 	.caption {
 		padding: 5em;
+		position: relative;
 	}
 	.caption-title {
 		font-size: 5em;
@@ -133,10 +138,21 @@
 		position: relative;
 		top: -0.5em;
 	}
+	.caption-subtitle::after {
+		content: "";
+		background: #000;
+		height: 9px;
+		width:  9px;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 15px;
+	}
+
 	.caption-text {
 		width: 300px;
 		line-height: 2;
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 100;
 	}
 	.caption-img {
 		display: block;
@@ -144,6 +160,39 @@
 		height: 500px;
 		position: relative;
 		top: -20em;
+	}
+	.chat::after {
+		content: "\e901";
+		color: #fff;
+	}
+	.bubble {
+		height: 60px;
+		width:  60px;
+		border-radius: 50%;
+		background: #f10d35;
+		position: fixed;
+		padding: 1em;
+		top: 85%;
+		right: 3em;
+		color: #fff;
+		display: flex;
+		justify-content: center;
+		align_items: center;
+	}
+
+	.tree {
+		position: absolute;
+		right: 15%;
+		top: 35%;
+		color: #f10d35;
+	}
+	.tree::after {
+		background: rgba(0,0,0,0.7);
+		position: absolute;
+		height: 50px;
+		width:  50px;
+		height: 30px;
+		width:  50px;
 	}
 	</style>
 </head>
@@ -173,9 +222,16 @@
 		<div class="caption">
 			<h2 class="caption-title">Ride to</h2>
 			<h4 class="caption-subtitle">freedom</h4>
-			<p class="caption-text">lorem ipsum donor et itsumipsum donor et itsumipsum donor et itsumipsum donor 
-			et itsumdonor et itsumipsum donor et itsumipsum donor et itsum</p>
+			<p class="caption-text">Experience a new way of<br> moving about your city.<br>
+			On a delightfully designed<br> electric bike.</p>
 			<img src="bicycle.png" class="caption-img">
+			<div>
+				<i class="fa fa-spa fa-5x tree"></i>
+			</div>
+		</div>
+
+		<div class="chat">
+			<span class="bubble"><i class="fa fa-comment fa-2x"></i></span>
 		</div>
 	</main>
 
