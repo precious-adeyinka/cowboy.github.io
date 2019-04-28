@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>cowboy</title>
+	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+
+	<style type="text/css">
+	* {
+		box-sizing: border-box;
+		transition: all 0.6s ease;
+	}
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		background: pink;
+		overflow: hidden;
+	}
+	nav {
+		padding: 0.5em 1em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+	.nav-left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.lang {
+		text-decoration: none;
+		color: #000;
+		align-self: center;
+		margin-right: 2em;	
+	}
+	/* Logo */
+	.logo {
+		font-size: 2em;
+		text-decoration: none;
+		color: #000;
+		position: relative;
+		margin-right: 2em;
+		letter-spacing: 0.2em;
+	}
+	.logo::after {
+		content: "";
+		background: #000;
+		height: 7px;
+		width:  7px;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 8px;
+	}
+
+	/* Navigation */
+	.menu {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.menu-item {
+		display: inline-block;
+		margin-right: 2em; 
+	}
+	.menu-link {
+		text-decoration: none;
+		color: #000;
+	}
+	.menu-link.active {
+		font-weight: 500;
+		text-decoration: underline;
+	}
+	/* Buttons */
+	.btn {
+		height: auto;
+		width: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0;
+		position: absolute;
+		right: 0;
+	}
+	.btn-black {
+		background: #000!important;
+	}
+	.btn-pink {
+		background: #de576f!important;
+	}
+	.btn-link {
+		padding: 2em;
+		min-width: 100px;
+		color: #fff;
+		text-decoration: none;
+		letter-spacing: 0.1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.btn-link:last-child {
+		margin-left: 0.2em;
+	}
+	.amount {
+		height: 25px;
+		width:  25px;
+		border-radius: 50%;
+		background: transparent;
+		border: 2px solid #fff;
+		display: flex;
+		justify-content: center;
+		align_items: center;
+		margin-left: 10px;
+	}
+	.caption {
+		padding: 5em;
+	}
+	.caption-title {
+		font-size: 5em;
+		font-weight: 900;
+		margin: 0;
+		padding: 0;
+	}
+	.caption-subtitle {
+		padding: 0;
+		font-size: 3.5em;
+		margin: 0;
+		color: #f10d35!important;
+		position: relative;
+		top: -0.5em;
+	}
+	.caption-text {
+		width: 300px;
+		line-height: 2;
+		font-size: 14px;
+	}
+	.caption-img {
+		display: block;
+		margin: 0 auto;
+		height: 500px;
+		position: relative;
+		top: -20em;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="nav-left">
+				<a href="" class="logo">COWBOY</a>
+
+				<ul class="menu">
+					<li class="menu-item"><a href="#" class="menu-link active">BIKE</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">APP</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">SUPPORT</a></li>
+					<li class="menu-item"><a href="#" class="menu-link">REVIEWS</a></li>
+				</ul>
+			</div>
+
+			<div class="btn">
+				<a href="#" class="lang">ENGLISH</a>
+				<a href="#" class="btn-black btn-link">TEST RIDE</a>
+				<a href="#" class="btn-pink  btn-link">BUY <span class="amount"><b>0</b></span></a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<div class="caption">
+			<h2 class="caption-title">Ride to</h2>
+			<h4 class="caption-subtitle">freedom</h4>
+			<p class="caption-text">lorem ipsum donor et itsumipsum donor et itsumipsum donor et itsumipsum donor 
+			et itsumdonor et itsumipsum donor et itsumipsum donor et itsum</p>
+			<img src="bicycle.png" class="caption-img">
+		</div>
+	</main>
+
+	<footer></footer>
+</body>
+</html>
