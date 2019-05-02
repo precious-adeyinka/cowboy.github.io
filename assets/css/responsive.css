@@ -51,4 +51,12 @@
 	.bubble {
 		right: 0.5em;
 	}
+
+	.tree {
+		position: absolute;
+		right: 5%;
+		top: 35%;
+		color: #f10d35;
+		font-size: 1em;
+	}
 }
