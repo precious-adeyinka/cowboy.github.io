@@ -1,0 +1,54 @@
+/* ================================ REPONSIVENESS FOR MOBILE VIEWPORT  ================================*/
+@media screen and (max-width: 768px) {
+	.nav-left {
+		flex-wrap: wrap;
+		justify-content: flex-start;;
+	}
+	.logo {
+		margin-bottom: 0.3em;
+		padding-left: -50px!important;
+	}
+	.caption-subtitle {
+		font-size: 3em;
+	}
+	.caption-subtitle::after {
+		bottom: 10px;
+	}
+	.menu-item {
+		margin-right: 1em;
+	}
+	.amount {
+		height: 20px;
+		width:  20px;
+	}
+	.lang {
+		margin-right: 2.5em;
+	}
+	.btn {
+		top: 7em;
+		right: 0;
+	}
+	.btn-link {
+		height: 50px;
+		font-size: 10px!important;
+		width: 100px;
+	}
+	.caption {
+		padding-left: 10px;
+	}
+	.caption-title {
+		font-size: 4em;
+		margin-top: 0em;
+		margin-bottom: 0.2em;
+	}
+	.caption-img {
+		display: block;
+		height: auto;
+		max-width: 100%;
+		margin: -1em auto 0em auto;
+		top: -1em;
+	}
+	.bubble {
+		right: 0.5em;
+	}
+}

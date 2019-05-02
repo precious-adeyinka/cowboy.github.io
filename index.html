@@ -1,207 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en(US)">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="description" content="">
+	<meta name="keyword" content="">
+	<meta name="Author" content="Precious Adeyinka">
+	<meta name="theme-color" content="#f10d35">
+
 	<title>cowboy</title>
-	<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" type="text/css" href="plugins/normalize.css/normalize.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
-	<style type="text/css">
-	* {
-		box-sizing: border-box;
-		transition: all 0.6s ease;
-	}
-	html,
-	body {
-		height: 100%;
-		width: 100%;
-		margin: 0;
-		padding: 0;
-		background: pink;
-		overflow: hidden;
-	}
-	nav {
-		padding: 0.5em 1em;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		position: relative;
-	}
-	.nav-left {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.lang {
-		text-decoration: none;
-		color: #000;
-		align-self: center;
-		margin-right: 2em;	
-	}
-	/* Logo */
-	.logo {
-		font-size: 2em;
-		text-decoration: none;
-		color: #000;
-		position: relative;
-		margin-right: 2em;
-		letter-spacing: 0.2em;
-		font-family: "Open Sans";
-	}
-	.logo::after {
-		content: "";
-		background: #000;
-		height: 7px;
-		width:  7px;
-		border-radius: 50%;
-		position: absolute;
-		bottom: 8px;
-	}
-
-	/* Navigation */
-	.menu {
-		padding: 0;
-		margin: 0;
-		list-style: none;
-	}
-	.menu-item {
-		display: inline-block;
-		margin-right: 2em; 
-	}
-	.menu-link {
-		text-decoration: none;
-		color: #000;
-		font-size: 14px;
-	}
-	.menu-link.active {
-		font-weight: 500;
-		text-decoration: underline;
-	}
-	/* Buttons */
-	.btn {
-		height: auto;
-		width: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0;
-		position: absolute;
-		right: 0;
-	}
-	.btn-black {
-		background: #000!important;
-	}
-	.btn-pink {
-		background: #de576f!important;
-		width: 150px;
-	}
-	.btn-link {
-		padding: 2em;
-		min-width: 100px;
-		color: #fff;
-		text-decoration: none;
-		letter-spacing: 0.1em;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.btn-link:last-child {
-		margin-left: 0em;
-	}
-	.amount {
-		height: 25px;
-		width:  25px;
-		border-radius: 50%;
-		background: transparent;
-		border: 2px solid #fff;
-		display: flex;
-		justify-content: center;
-		align_items: center;
-		margin-left: 10px;
-	}
-	.caption {
-		padding: 5em;
-		position: relative;
-	}
-	.caption-title {
-		font-size: 5em;
-		font-weight: 900;
-		margin: 0;
-		padding: 0;
-	}
-	.caption-subtitle {
-		padding: 0;
-		font-size: 3.5em;
-		margin: 0;
-		color: #f10d35!important;
-		position: relative;
-		top: -0.5em;
-	}
-	.caption-subtitle::after {
-		content: "";
-		background: #000;
-		height: 9px;
-		width:  9px;
-		border-radius: 50%;
-		position: absolute;
-		bottom: 15px;
-	}
-
-	.caption-text {
-		width: 300px;
-		line-height: 2;
-		font-size: 16px;
-		font-weight: 100;
-	}
-	.caption-img {
-		display: block;
-		margin: 0 auto;
-		height: 500px;
-		position: relative;
-		top: -20em;
-	}
-	.chat::after {
-		content: "\e901";
-		color: #fff;
-	}
-	.bubble {
-		height: 60px;
-		width:  60px;
-		border-radius: 50%;
-		background: #f10d35;
-		position: fixed;
-		padding: 1em;
-		top: 85%;
-		right: 3em;
-		color: #fff;
-		display: flex;
-		justify-content: center;
-		align_items: center;
-	}
-
-	.tree {
-		position: absolute;
-		right: 15%;
-		top: 35%;
-		color: #f10d35;
-	}
-	.tree::after {
-		background: rgba(0,0,0,0.7);
-		position: absolute;
-		height: 50px;
-		width:  50px;
-		height: 30px;
-		width:  50px;
-	}
-	</style>
 </head>
 <body>
 	<header>
 		<nav>
+			<!-- Left Navigation bar -->
 			<div class="nav-left">
+				<!-- Logo/Title -->
 				<a href="" class="logo">COWBOY</a>
-
+				<!-- Navigation Menu -->
 				<ul class="menu">
 					<li class="menu-item"><a href="#" class="menu-link active">BIKE</a></li>
 					<li class="menu-item"><a href="#" class="menu-link">APP</a></li>
@@ -209,7 +33,7 @@
 					<li class="menu-item"><a href="#" class="menu-link">REVIEWS</a></li>
 				</ul>
 			</div>
-
+			<!-- Navigation Buttons -->
 			<div class="btn">
 				<a href="#" class="lang">ENGLISH</a>
 				<a href="#" class="btn-black btn-link">TEST RIDE</a>
@@ -219,17 +43,18 @@
 	</header>
 
 	<main>
+		<!-- Body Caption -->
 		<div class="caption">
 			<h2 class="caption-title">Ride to</h2>
 			<h4 class="caption-subtitle">freedom</h4>
 			<p class="caption-text">Experience a new way of<br> moving about your city.<br>
 			On a delightfully designed<br> electric bike.</p>
-			<img src="bicycle.png" class="caption-img">
+			<img src="./assets/img/bicycle.png" class="caption-img">
 			<div>
 				<i class="fa fa-spa fa-5x tree"></i>
 			</div>
 		</div>
-
+		<!-- Chat bubble Icon -->
 		<div class="chat">
 			<span class="bubble"><i class="fa fa-comment fa-2x"></i></span>
 		</div>
